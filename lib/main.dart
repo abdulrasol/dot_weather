@@ -50,7 +50,7 @@ class _MainAppState extends State<MainApp> {
                             if (snapshot.hasData) {
                               var weather =
                                   jsonDecode(snapshot.data.toString());
-                              print(weather);
+                              print(weather['dataseries'][0]);
                               return Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -61,7 +61,8 @@ class _MainAppState extends State<MainApp> {
                                         CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                        '9',
+                                        weather['dataseries'][0]['temp2m']
+                                            .toString(),
                                         style: GoogleFonts.lato(
                                             fontSize: 110, color: Colors.white),
                                       ),
