@@ -10,6 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   location: ^7.0.0
+  current_location: ^0.0.3
+  dio: ^5.6.0
+  google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_test:
@@ -18,3 +21,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/day.jpg
+    - assets/day1.jpg
+    - assets/night.jpg
+    - assets/night1.jpg
+    - assets/moring.jpg
+    - assets/moring1.jpg
+    - assets/sunset.jpg
+    - assets/sunset1.jpg
