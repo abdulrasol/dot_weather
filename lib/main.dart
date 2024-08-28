@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dot_weather/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -50,19 +51,40 @@ class _MainAppState extends State<MainApp> {
                             if (snapshot.hasData) {
                               var weather =
                                   jsonDecode(snapshot.data.toString());
-                              print(weather['dataseries'][0]);
+                              Map locationData = weather['location'];
+                              Map currentData = weather['current'];
+                              Map forecastData = weather['forecast'];
+                              // List forecastday = forecastData['forecastday'][1];
+                              print(forecastData);
                               return Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
+                                  Text(
+                                    locationData['name'].toString(),
+                                    style: GoogleFonts.lato(
+                                        fontSize: 48, color: Colors.white),
+                                  ),
+                                  /* CachedNetworkImage(
+                                    imageUrl: 'https:' +
+                                        currentData['condition']['icon'],
+                                    width: 200,
+                                    height: 200,
+                                    fit: BoxFit.contain,
+                                    progressIndicatorBuilder: (context, url,
+                                            downloadProgress) =>
+                                        CircularProgressIndicator(
+                                            value: downloadProgress.progress),
+                                    errorWidget: (context, url, error) =>
+                                        Icon(Icons.error),
+                                  ),*/
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                        weather['dataseries'][0]['temp2m']
-                                            .toString(),
+                                        currentData['temp_c'].toString(),
                                         style: GoogleFonts.lato(
                                             fontSize: 110, color: Colors.white),
                                       ),
@@ -74,7 +96,7 @@ class _MainAppState extends State<MainApp> {
                                     ],
                                   ),
                                   Text(
-                                    'Sunny',
+                                    currentData['condition']['text'].toString(),
                                     style: GoogleFonts.lato(
                                         fontSize: 65, color: Colors.white),
                                   ),
@@ -89,7 +111,14 @@ class _MainAppState extends State<MainApp> {
                     }
                   }),
             ),
-            // Positioned(bottom: 0, left: 0, right: 0, child: Text('google')),
+            Positioned(
+                bottom: 20,
+                left: 0,
+                right: 0,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [])),
           ],
         ),
       ),
@@ -98,6 +127,7 @@ class _MainAppState extends State<MainApp> {
 
   Widget timeOfDay() {
     int hour = TimeOfDay.now().hour;
+    print(hour);
     if (hour >= 18 && hour < 20) {
       return Image.asset(
         'assets/sunset1.jpg',
@@ -114,7 +144,7 @@ class _MainAppState extends State<MainApp> {
     }
     if (hour >= 20 && hour <= 24 || hour >= 1 && hour < 5) {
       return Image.asset(
-        'assets/day1.jpg',
+        'assets/night1.jpg',
         fit: BoxFit.cover,
         // opacity: const AlwaysStoppedAnimation(.5),
       );

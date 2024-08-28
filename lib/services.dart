@@ -22,8 +22,7 @@ Future<Map<String, dynamic>> getLocation() async {
 }
 
 Future getWeather({required latitude, required longitude}) async {
-  
   final dio = Dio();
   return await dio.get(
-      "http://www.7timer.info/bin/api.pl?lon=44.3412&lat=32.0211&product=astro&output=json");
+      "http://api.weatherapi.com/v1/forecast.json?key=f5b1de87731f4d70b2e124743242808&q=$latitude,$longitude&days=1&aqi=no&alerts=no");
 }
