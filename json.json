@@ -1,0 +1,439 @@
+{
+    "location": {
+        "name": "London",
+        "region": "City of London, Greater London",
+        "country": "United Kingdom",
+        "lat": 51.52,
+        "lon": -0.11,
+        "tz_id": "Europe/London",
+        "localtime_epoch": 1724918862,
+        "localtime": "2024-08-29 09:07"
+    },
+    "current": {
+        "temp_c": 14.3,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "code": 1000
+        },
+        "wind_mph": 9.4,
+        "wind_kph": 15.1,
+        "wind_degree": 290,
+        "wind_dir": "WNW",
+        "pressure_mb": 1018.0,
+        "pressure_in": 30.06,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 88,
+        "cloud": 0,
+        "feelslike_c": 13.3,
+        "feelslike_f": 56.0,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 5.0,
+        "gust_mph": 9.8,
+        "gust_kph": 15.7
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2024-08-29",
+                "day": {
+                    "maxtemp_c": 22.5,
+                    "mintemp_c": 14.5,
+                    "avgtemp_c": 18.5,
+                    "maxwind_kph": 15.5,
+                    "totalprecip_mm": 0.0,
+                    "totalprecip_in": 0.0,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avgvis_miles": 6.0,
+                    "avghumidity": 56,
+                    "daily_will_it_rain": 0,
+                    "daily_chance_of_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                        "code": 1000
+                    },
+                    "uv": 5.0
+                },
+                "astro": {
+                    "sunrise": "06:09 AM",
+                    "sunset": "07:53 PM",
+                    "moonrise": "12:15 AM",
+                    "moonset": "06:27 PM",
+                    "moon_phase": "Waning Crescent",
+                    "moon_illumination": 24,
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "time": "2024-08-29 00:00",
+                        "temp_c": 17.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 70,
+                        "cloud": 2,
+                        "feelslike_c": 17.8,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 01:00",
+                        "temp_c": 16.9,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 73,
+                        "cloud": 2,
+                        "feelslike_c": 16.9,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 02:00",
+                        "temp_c": 16.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 76,
+                        "cloud": 7,
+                        "feelslike_c": 16.2,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 03:00",
+                        "temp_c": 15.6,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 78,
+                        "cloud": 2,
+                        "feelslike_c": 15.6,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 04:00",
+                        "temp_c": 15.1,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 78,
+                        "cloud": 3,
+                        "feelslike_c": 15.1,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 05:00",
+                        "temp_c": 14.6,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 78,
+                        "cloud": 3,
+                        "feelslike_c": 14.1,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 06:00",
+                        "temp_c": 14.5,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 76,
+                        "cloud": 4,
+                        "feelslike_c": 13.9,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 07:00",
+                        "temp_c": 15.4,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 69,
+                        "cloud": 8,
+                        "feelslike_c": 15.4,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 08:00",
+                        "temp_c": 16.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 61,
+                        "cloud": 8,
+                        "feelslike_c": 16.7,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 09:00",
+                        "temp_c": 14.3,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 88,
+                        "cloud": 0,
+                        "feelslike_c": 18.1,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 10:00",
+                        "temp_c": 19.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 48,
+                        "cloud": 12,
+                        "feelslike_c": 19.5,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 11:00",
+                        "temp_c": 20.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 43,
+                        "cloud": 0,
+                        "feelslike_c": 20.7,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 12:00",
+                        "temp_c": 21.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 40,
+                        "cloud": 10,
+                        "feelslike_c": 21.7,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 13:00",
+                        "temp_c": 22.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 38,
+                        "cloud": 16,
+                        "feelslike_c": 24.0,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 14:00",
+                        "temp_c": 22.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly Cloudy ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                            "code": 1003
+                        },
+                        "humidity": 37,
+                        "cloud": 25,
+                        "feelslike_c": 24.0,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 15:00",
+                        "temp_c": 22.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly Cloudy ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                            "code": 1003
+                        },
+                        "humidity": 37,
+                        "cloud": 46,
+                        "feelslike_c": 24.0,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 16:00",
+                        "temp_c": 22.3,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly Cloudy ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                            "code": 1003
+                        },
+                        "humidity": 37,
+                        "cloud": 45,
+                        "feelslike_c": 24.0,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 17:00",
+                        "temp_c": 21.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 39,
+                        "cloud": 23,
+                        "feelslike_c": 21.8,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 18:00",
+                        "temp_c": 20.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 44,
+                        "cloud": 8,
+                        "feelslike_c": 20.7,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 19:00",
+                        "temp_c": 19.2,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 49,
+                        "cloud": 0,
+                        "feelslike_c": 19.2,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 20:00",
+                        "temp_c": 18.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 52,
+                        "cloud": 0,
+                        "feelslike_c": 18.4,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 21:00",
+                        "temp_c": 17.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 54,
+                        "cloud": 0,
+                        "feelslike_c": 17.8,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 22:00",
+                        "temp_c": 17.3,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 56,
+                        "cloud": 1,
+                        "feelslike_c": 17.3,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    },
+                    {
+                        "time": "2024-08-29 23:00",
+                        "temp_c": 16.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Clear ",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                            "code": 1000
+                        },
+                        "humidity": 58,
+                        "cloud": 9,
+                        "feelslike_c": 16.8,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

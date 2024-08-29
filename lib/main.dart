@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cached_network_image/cached_network_image.dart';
+//import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dot_weather/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -51,17 +51,18 @@ class _MainAppState extends State<MainApp> {
                             if (snapshot.hasData) {
                               var weather =
                                   jsonDecode(snapshot.data.toString());
-                              Map locationData = weather['location'];
+                              String city = weather['location']['name'];
                               Map currentData = weather['current'];
-                              Map forecastData = weather['forecast'];
-                              // List forecastday = forecastData['forecastday'][1];
-                              print(forecastData);
+                              Map forecastday =
+                                  weather['forecast']['forecastday'][0];
+                              Map currentDay = forecastday['day'];
+                              print(currentDay);
                               return Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    locationData['name'].toString(),
+                                    city,
                                     style: GoogleFonts.lato(
                                         fontSize: 48, color: Colors.white),
                                   ),
@@ -111,7 +112,7 @@ class _MainAppState extends State<MainApp> {
                     }
                   }),
             ),
-            Positioned(
+            const Positioned(
                 bottom: 20,
                 left: 0,
                 right: 0,
@@ -127,7 +128,6 @@ class _MainAppState extends State<MainApp> {
 
   Widget timeOfDay() {
     int hour = TimeOfDay.now().hour;
-    print(hour);
     if (hour >= 18 && hour < 20) {
       return Image.asset(
         'assets/sunset1.jpg',
