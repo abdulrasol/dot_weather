@@ -1,0 +1,23 @@
+name: dot-weather
+version: '1.0'
+summary: Simple weather app using Flutter
+description: |
+  Simple weather app using Flutter, get location dirctlay and get forcast for current moment and hourly.
+
+base: core22
+confinement: strict
+grade: stable
+
+apps:
+  dot-weather:
+    command: dot_weather
+    extensions: [gnome]
+    plugs:
+    - network
+
+parts:
+  dot-weather:
+    source: .
+    
+    plugin: flutter
+    flutter-target: lib/main.dart

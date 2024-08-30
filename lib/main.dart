@@ -1,14 +1,26 @@
 import 'dart:convert';
 
-//import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dot_weather/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:intl/intl.dart';
 
-void main() {
+//late final StatusNotifierItemClient client;
+
+void main() async {
+  /* client = StatusNotifierItemClient(
+      id: 'test-client',
+      iconName: 'computer-fail-symbolic',
+      menu: DBusMenuItem(children: [
+        DBusMenuItem(label: 'Hello'),
+        DBusMenuItem(label: 'World', enabled: false),
+        DBusMenuItem.separator(),
+        DBusMenuItem(
+            label: 'Quit', onClicked: () async => await client.close()),
+      ]));
+  await client.connect();
+  */
   runApp(const MainApp());
 }
 
@@ -40,11 +52,24 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
+      debugShowCheckedModeBanner: false,
       theme: const CupertinoThemeData(
           brightness: Brightness.light, barBackgroundColor: Colors.transparent),
       home: CupertinoPageScaffold(
         navigationBar: CupertinoNavigationBar(
-          middle: Text(title),
+          trailing: IconButton(
+              onPressed: () {
+                setState(() {});
+              },
+              icon: const Icon(
+                Icons.refresh,
+                color: Colors.white60,
+              )),
+          middle: Text(
+            title,
+            style: GoogleFonts.lato(color: Colors.white60),
+          ),
+          border: null,
         ),
         child: Stack(
           children: [
@@ -303,6 +328,7 @@ class _MainAppState extends State<MainApp> {
       'date': weather['location']['localtime'].toString().split(' ')[0],
       'city': weather['location']['name'],
       'current_temp': weather['current']['temp_c'].toString(),
+      'feel_like': weather['current']['feelslike_c'].toString(),
       'current_condition': weather['current']['condition']['text'],
       'current_icon': weather['current']['condition']['icon'],
       'max_temp':

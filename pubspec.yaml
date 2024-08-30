@@ -14,7 +14,9 @@ dependencies:
   dio: ^5.6.0
   google_fonts: ^4.0.4
   cached_network_image: ^3.3.1
-  intl: ^0.19.0
+  xdg_status_notifier_item: ^0.0.1
+  flutter_launcher_icons: ^0.13.1
+
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +35,4 @@ flutter:
     - assets/moring1.jpg
     - assets/sunset.jpg
     - assets/sunset1.jpg
+    - assets/dot-weather.png

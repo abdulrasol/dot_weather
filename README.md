@@ -1,3 +1,5 @@
 # dot_weather
 
-A new Flutter project.
+## Simple weather app using Flutter
+
+Simple weather app using Flutter, get location dirctlay and get forcast for current moment and hourly.

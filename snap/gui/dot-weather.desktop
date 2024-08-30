@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dot Weather
+Comment=Simple weather app using Flutter
+Exec=dot-weather
+Icon=${SNAP}/meta/gui/dot-weather.png # Replace name with your app name.
+Terminal=true
+Type=Application
+Categories=news-and-weather; # Adjust accordingly your snap category.
