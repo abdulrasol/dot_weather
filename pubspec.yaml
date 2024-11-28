@@ -16,6 +16,7 @@ dependencies:
   cached_network_image: ^3.3.1
   xdg_status_notifier_item: ^0.0.1
   flutter_launcher_icons: ^0.13.1
+  geolocator: ^13.0.2
 
 
 dev_dependencies:
